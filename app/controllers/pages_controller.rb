@@ -4,8 +4,7 @@ class PagesController < ApplicationController
 
     def hello
         @user = User.find_by(name: 'Martyna')
-      
-        @czas = Time.current
-       
-    end
+        @rzeczy_ktore_lubie = ['malarstwo', 'film',]
+
+        end
 end
