@@ -1,0 +1,15 @@
+<h1>cześć, <%= @user.name %></h1>
+<h3> jest <%= @czas %></h3>
+<h3> masz <%= @user.age  %> lat</h3>
+<h4> Twoje rodzinne miasto to <%= @user.city %></h4>
+
+
+<h4> najbardziej lubię słuchać </h4>
+<ul>
+    <% @user.albums.each do |plyta| %>
+    <li>Autor: <%= plyta.artist%> <br>tytul: <%= plyta.title%> <br>rok: <%= plyta.year%>  </li>
+    <% end %>
+</ul>
+
+<h1> po co jest to "ERB"?</h1>
+
